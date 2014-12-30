@@ -32,11 +32,23 @@ https://github.com/jhudson8/react-semantic-ui/tree/master/docs[react-sematic-ui]
 
 The two simple test files are basically the same tests, one mocks a child component, the other doesn't.  I made them to try and understand what the whole rewire approach was really doing, and to get a start on learning how to test React components.
 
-The rewire approach results in the React warning
+The rewire approach originally outlined by Mars,
 
-`WARN: 'Warning: This JSX uses a plain function. Only React components are valid in React's JSX transform.'`
+    rewireModule(Component_1, {
+        Component_2: React.createFactory('div')
+    });
 
-I tried several different ways of expressing the operations, but none silenced the warning.  I'd especially like to have a working example that doesn't have this problem.  If you have one, please send me a link so I can fix it here.
+results in the React warning when run in current versions of react (>=0.12.2)
+
+    WARN: 'Warning: This JSX uses a plain function. Only React components are valid in React's JSX transform.'
+
+Mars suggests this workaround
+
+    rewireModule(Component_1, {
+        Component_2: React.createClass({ render: function() { return (<div />); }})
+    });
+
+This works, though the extra verbosity is regrattable.
 
 == Not Done
 

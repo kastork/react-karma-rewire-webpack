@@ -9,9 +9,8 @@ var Component_2 = require('../app/Component_2');
 describe("Rewired Component_1", function () {
   
   var instance;
-  
   rewireModule(Component_1, {
-    Component_2: React.createFactory('div')
+    Component_2: React.createClass({ render: function() { return (<div />); }})
   });
 
   beforeEach(function () {
