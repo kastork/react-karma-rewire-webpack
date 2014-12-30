@@ -48,7 +48,7 @@ Mars suggests this workaround
         Component_2: React.createClass({ render: function() { return (<div />); }})
     });
 
-This works, though the extra verbosity is regrattable.
+This works, though the extra verbosity is regrettable.
 
 == Not Done
 
