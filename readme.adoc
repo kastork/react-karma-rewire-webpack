@@ -24,11 +24,11 @@ I cobbled this together as a starting point for a new side project for learning 
 
 http://substantial.com/blog/2014/11/11/test-driven-react-how-to-manually-mock-components/[Mars Hall's blog].  From here the main thing is the use of a webpack plugin and a mocking strategy that's almost as simple as using Jest.
 
-http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html [Oleaksandr Rudenko's blog] and of course https://github.com/webpack/karma-webpack [the karma-webpack repository] were both helpful for organizing the test execution setup.
+http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html[Oleaksandr Rudenko's blog] and of course https://github.com/webpack/karma-webpack[the karma-webpack repository] were both helpful for organizing the test execution setup.
 
 https://github.com/jhudson8/react-semantic-ui/tree/master/docs[react-sematic-ui] and http://semantic-ui.com/[The Semantic-ui website].
 
-== Problems (please help)
+== Problems
 
 The two simple test files are basically the same tests, one mocks a child component, the other doesn't.  I made them to try and understand what the whole rewire approach was really doing, and to get a start on learning how to test React components.
 
@@ -36,7 +36,7 @@ The rewire approach results in the React warning
 
 `WARN: 'Warning: This JSX uses a plain function. Only React components are valid in React's JSX transform.'`
 
-I tried several different ways of expressing the operations, but none silenced the warning.  I'd especially like to have a working example that doesn't have this problem.
+I tried several different ways of expressing the operations, but none silenced the warning.  I'd especially like to have a working example that doesn't have this problem.  If you have one, please send me a link so I can fix it here.
 
 == Not Done
 
@@ -45,3 +45,7 @@ There are things I'll likely add to this over time.  Like expanding it to show h
 Semantic-ui is very interesting.  It would be nice to have a demo of incorporating customizations, like themes, in the build.
 
 Pull requests that keep things simple but demonstrate good ways to use these tools together are welcome.
+
+== OSS
+
+The contents of this repository are distributed under the MIT license.
