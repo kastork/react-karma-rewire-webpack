@@ -1,10 +1,11 @@
 module.exports = function (config) {
   
+
   var rewirePlugin = require('rewire-webpack');
 
   config.set({
     basePath: '',
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'webpack'],
     
     /**
      * Either target the testindex.js file to get one
@@ -109,12 +110,12 @@ module.exports = function (config) {
     // if true, it capture browsers, run tests and exit
     singleRun: true
 
-    //plugins: [
+    // plugins: [
     //  require('karma-webpack'),
     //  require('karma-jasmine'),
     //  require('karma-chrome-launcher'),
     //  require('karma-firefox-launcher'),
     //  require('karma-junit-reporter')
-    //]
+    // ]
   });
 };
